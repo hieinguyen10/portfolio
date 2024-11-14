@@ -9,3 +9,11 @@ html, body {
   width: 100%;
   overflow-x: auto;  /* Enable horizontal scrolling */
 }
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 4em;
+}

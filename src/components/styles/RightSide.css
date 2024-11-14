@@ -1,5 +1,120 @@
-.rightside {
-    color: white;
+.content-section {
     flex-grow: 1;
-    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 1500px;
+    color: white;
+    padding: 20px;
+    height: 100%;
 }
+
+.section {
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+
+.status {
+    width: fit-content;
+    padding: 0 20px 0 20px;
+    border-radius: 40px;
+    border: 5px solid white;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 50px;
+}
+
+.status-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(0, 212, 0);
+    border: 2px solid rgb(2, 94, 2);
+}
+
+.buttons {
+    padding-bottom: 100px;
+}
+
+.button {
+    margin: 20px;
+}
+
+.aboutMe {
+    width: 80%;
+}
+
+.wrapper {
+    display: flex;
+    border: 2px solid #ffff;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.location, .contactInfo {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.embedGlobe {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.socialMedia ul {
+    list-style: none;
+}
+
+.socialMedia li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+li svg {
+    margin-right: 8px; /* Adds space between icon and text */
+}
+
+.skills {
+    display: flex;
+    width: calc(80% - 20px - 20px);
+    border: 2px solid #ffff;
+    border-radius: 20px;
+}
+
+.skills ul {
+    display: inline-flex;
+    font-size: 2em;
+    list-style: none;
+}
+
+
+
+
+

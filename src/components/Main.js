@@ -2,23 +2,24 @@ import React from 'react'
 import './styles/Main.css'
 import RightSide from './RightSide'
 import MainScreen from './MainScreen'
+import BackGround from '../data/BackGround'
+
 
 const Main = () => {
   return (
     <div className='container'>
-        <div className='fixed-column'>
-          <div className='outer-container'>
-            <div className='borderLine top-container' />
-            <div className='borderLine mid-container' />
-            <div className='borderLine bottom-container' />
+        <section className='iphone-section'>
+          <div className='iphone-mock'>
+            <div className='borderLine top' />
+            <div className='borderLine mid' />
+            <div className='borderLine bottom' />
+            <BackGround />
             <MainScreen/>
             </div>
-        </div>
+        </section>
 
         <RightSide/>
-
     </div>
   )
 }
-
 export default Main

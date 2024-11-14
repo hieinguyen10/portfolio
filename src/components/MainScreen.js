@@ -14,7 +14,7 @@ const MainScreen = () => {
             </div>
           </div>
           <div className='gid-item network-section'>
-
+            
           </div>
         </div>
     </div>

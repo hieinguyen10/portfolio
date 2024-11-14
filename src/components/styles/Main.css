@@ -1,23 +1,26 @@
 .container {
     display: flex;
     height: 100vh;
-    overflow-x: auto;
-    background-color: black;
+    overflow: hidden;
+    background-color: #010012;
 }
 
-.fixed-column {
+.iphone-section {
     display: flex;
     position: sticky;
     top: 0;
-    width: 40%;
+    left: 0;
+    width: 40hv;
     min-width: 1200px;
     height: 100%;
     min-height:  1700px;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    flex-shrink: 0;
 }
 
-.outer-container {
+.iphone-mock {
     position: relative;
     z-index: 1;
     width: 950px;
@@ -29,21 +32,30 @@
     box-shadow: inset 0 0 3px 1px #fff;
 }
 
-.top-container {
+.top {
     height: 150px;
     width: 100%;
     border-radius: 100px 100px 0 0;
     margin-bottom: 10px;
 }
 
-.bottom-container {
+.bottom {
     height: 150px;
     width: 100%;
     border-radius: 0 0 100px 100px;
     margin-top: 10px;
 }
 
-.mid-container {
+.mid {
     height: calc(100% - 300px - 20px);
     width: 100%;
+}
+
+.button {
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 2em;
 }
