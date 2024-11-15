@@ -2,13 +2,27 @@ import React from 'react';
 import './styles/RightSide.css';
 import EmbedGlobe from '../data/embedGlobe'
 import socialMedia from '../data/socialMedia'
+import skills from '../data/skills'
+import ProjectsGallery from './ProjectsGallery';
 
-function SocialMediaList() {
+const SocialMediaList = () => {
   return (
     <ul>
       {socialMedia.map((platform, index) => (
         <li key={index}>
-          <a href={platform.url} target="_blank" rel="noopener noreferrer">{platform.icon} {platform.name}</a>
+          <a href={platform.url} target="_blank" rel="noopener noreferrer">{platform.icon}<p style={{marginLeft:'20px'}}>{platform.name}</p></a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+const SkillsList = () => {
+  return (
+    <ul>
+      {skills.map((skill, index1) => (
+        <li key={index1}>
+          {skill.icon} {skill.name}
         </li>
       ))}
     </ul>
@@ -22,8 +36,12 @@ const RightSide = () => {
         <div className='status-dot'/>
         <p>Available for work</p>
       </div>
-      <h1>HIEU NGUYEN</h1>
-      <h2>Front-End Development</h2>
+      <div className='section introduction'>
+        <h1>HIEU NGUYEN</h1>
+        <h1>Front-End Development</h1>
+        <p style={{marginTop:"20px"}}>I'm passionate about programming and front-end development constantly improving my skills</p> <p style={{marginBottom:"50px"}}>to become a versatile full-stack developer while staying curious and committed to growth</p>
+      </div>
+      
       <div className='section buttons'>
         <button className='button download'>Download CV</button>
         <button className='button contactMe'>Contact Me</button>
@@ -40,18 +58,10 @@ const RightSide = () => {
         </div>
       </div>
       <div className='skills'>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>C#</li>
-          <li>React</li>
-          <li>Boostrap</li>
-          <li>Python</li>
-        </ul>
+        <SkillsList/>
       </div>
-      <div>
-        <h1>Projects</h1>
+      <div className='projects'>
+        <ProjectsGallery/>
       </div>
     </section>
   )

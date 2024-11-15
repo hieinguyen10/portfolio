@@ -11,9 +11,14 @@ html, body {
 }
 
 h1 {
+  font-family: "Inter", sans-serif;
   font-size: 5em;
+  color: #fdf2ed;
+  
 }
 
 h2 {
+  font-family: "Inter", sans-serif;
   font-size: 4em;
+  color: #fdf2ed;
 }
