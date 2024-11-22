@@ -10,6 +10,13 @@ html, body {
   overflow-x: auto;  /* Enable horizontal scrolling */
 }
 
+.App {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #010012;
+}
+
 h1 {
   font-family: "Inter", sans-serif;
   font-size: 5em;

@@ -2,13 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/Header';
 import Footer from './components/Footer';
-import Main from './components/Main';
+import IphoneMock from './components/IphoneMock';
+import InformationSide from './components/InformationSide';
 
 function App() {
   return (
     <div className="App">
 
-      <Main />
+      <IphoneMock/>
+      <InformationSide/>
  
     </div>
   );

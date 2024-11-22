@@ -1,12 +1,12 @@
 import React from 'react'
-import "./styles/MainScreen.css"
+import "./styles/IphoneScreen.css"
 
-const MainScreen = () => {
+const IphoneScreen = () => {
   return (
     <div className='screen-container'>
         <div className='top-section'>
           <div className='gid-item time-section'>
-            <p>20:00</p>    
+            <p>20:00</p>
           </div>
           <div className='gid-item dynamic-island'>
             <div className='camera-dot'>
@@ -14,11 +14,11 @@ const MainScreen = () => {
             </div>
           </div>
           <div className='gid-item network-section'>
-            
+
           </div>
         </div>
     </div>
   )
 }
 
-export default MainScreen
+export default IphoneScreen

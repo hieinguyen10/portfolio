@@ -1,6 +1,5 @@
 import React from 'react';
-import './styles/RightSide.css';
-import EmbedGlobe from '../data/embedGlobe'
+import './styles/InformationSide.css';
 import socialMedia from '../data/socialMedia'
 import skills from '../data/skills'
 import ProjectsGallery from './ProjectsGallery';
@@ -29,7 +28,7 @@ const SkillsList = () => {
   );
 }
 
-const RightSide = () => {
+const InformationSide = () => {
   return (
     <section className='content-section'>
       <div className='section status'>
@@ -50,7 +49,17 @@ const RightSide = () => {
       <div className='section aboutMe'>
         <div className='wrapper location'>
           <h2>Montreal, Quebec, Canada</h2>
-          <EmbedGlobe/>
+          <div className="embedGlobe">
+            <iframe
+              src="https://gifer.com/embed/gzZ"
+              width="500"
+              height="500"
+              style={{ pointerEvents: 'none' }}
+              frameBorder="0"
+              allowFullScreen
+              title="GIF"
+        />
+    </div>
         </div>
         <div className='wrapper contactInfo'>
           <h2>Connect with me</h2>
@@ -67,4 +76,4 @@ const RightSide = () => {
   )
 }
 
-export default RightSide
+export default InformationSide
