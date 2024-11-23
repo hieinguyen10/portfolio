@@ -34,12 +34,8 @@
     background-size: 300%;
     animation: border 20s linear infinite;
     z-index: -1;
-}
-
-.iphone-mock::after {
     filter: blur(50px);
 }
-
 
 .borderLine {
     background-color: #152839;

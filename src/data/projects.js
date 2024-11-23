@@ -8,6 +8,10 @@ const projects = [
     {
         name: "lylystudio",
         description: "this is description",
+    },
+    {
+        name: "game2048",
+        description: "this is description",
     }
 ]
 
