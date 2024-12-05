@@ -14,8 +14,12 @@ const IphoneScreen = () => {
             </div>
           </div>
           <div className='gid-item network-section'>
-
           </div>
+        </div>
+        <div className='applications-section'>
+          
+        </div>
+        <div className='bottom-section'>
         </div>
     </div>
   )

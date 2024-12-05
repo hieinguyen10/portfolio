@@ -7,17 +7,19 @@ import IphoneScreen from './IphoneScreen'
 const IphoneMock = () => {
   return (
     <section className='iphone-section'>
-          <div className='iphone-mock'>
-            <div className='borderLine top' />
-            <div className='borderLine mid' />
-            <div className='borderLine bottom' />
-            <div className='background'>
-              <video id='video-background' autoPlay loop muted>
-                <source src={backgroundVideo} type="video/mp4" />
-              </video>
-            </div>
-            <IphoneScreen/>
-            </div>
+      <div className='iphone-box'>
+        <div className='iphone-mock'>
+          <div className='borderLine top' />
+          <div className='borderLine mid' />
+          <div className='borderLine bottom' />
+          <div className='background'>
+            <video id='video-background' autoPlay loop muted preload='auto' playsInline>
+              <source src={backgroundVideo} type="video/mp4" />
+            </video>
+          </div>
+          <IphoneScreen/>
+        </div>
+      </div>
     </section>
   )
 }

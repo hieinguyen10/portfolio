@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import IphoneMock from './components/IphoneMock';
 import InformationSide from './components/InformationSide';
 
+
 function App() {
   return (
     <div className="App">

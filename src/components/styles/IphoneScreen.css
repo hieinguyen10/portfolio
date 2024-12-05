@@ -1,42 +1,43 @@
 .screen-container {
     position: absolute;
-    width: 940px;
-    height: 1690px;
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 7777;
-    border-radius: 99px;
-    border: 10px solid black;
+    padding: 10px;
 }
 
 .top-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 40px;
+    overflow: hidden;
 }
 
 .gid-item {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
     color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dynamic-island {
-    display: flex;
-    align-items: center;
     justify-content: end;
     background-color: black;
-    margin-top: 20px;
-    margin-bottom: 20px ;
-    border-radius: 40px;
+    padding-right: 10px;
+    border-radius: 30px;
     box-shadow: 0 2px 10px rgba(61, 56, 56, 0.1);
 }
 
 .camera-dot {
     background-color: #ffff;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     opacity: 0.3;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -54,7 +55,17 @@
 .camera-dot-2 {
     background-color: #000;
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     opacity: 0.7;
+}
+.applications-section {
+    height: calc(100% - 110px - 5px);
+}
+.bottom-section {
+    height: 70px;
+    margin: 0 30px 0 30px;
+    background-color: #414141;
+    opacity: 0.8;
+    border-radius: 20px;
 }

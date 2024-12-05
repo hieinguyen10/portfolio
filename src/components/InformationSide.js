@@ -3,6 +3,8 @@ import './styles/InformationSide.css';
 import socialMedia from '../data/socialMedia'
 import skills from '../data/skills'
 import ProjectsGallery from './ProjectsGallery';
+import { HiCloudArrowDown } from "react-icons/hi2";
+import { HiEnvelope } from "react-icons/hi2";
 
 const SocialMediaList = () => {
   return (
@@ -38,12 +40,11 @@ const InformationSide = () => {
       <div className='section introduction'>
         <h1>HIEU NGUYEN</h1>
         <h1>Front-End Development</h1>
-        <p style={{marginTop:"20px"}}>I'm passionate about programming and front-end development constantly improving my skills</p> <p style={{marginBottom:"50px"}}>to become a versatile full-stack developer while staying curious and committed to growth</p>
+        <p style={{marginTop:"20px", marginBottom:"50px"}}>I'm passionate about programming and front-end development, and constantly improving my skills to become a versatile full-stack developer while staying curious and committed to growth</p>
       </div>
-      
       <div className='section buttons'>
-        <button className='button download'>Download CV</button>
-        <button className='button contactMe'>Contact Me</button>
+        <button className='button download'><HiCloudArrowDown />Download CV</button>
+        <button className='button contactMe'><HiEnvelope />Contact Me</button>
       </div>
       <h1>About Me</h1>
       <div className='section aboutMe'>
@@ -52,8 +53,8 @@ const InformationSide = () => {
           <div className="embedGlobe">
             <iframe
               src="https://gifer.com/embed/gzZ"
-              width="500"
-              height="500"
+              width="300"
+              height="300"
               style={{ pointerEvents: 'none' }}
               frameBorder="0"
               allowFullScreen
@@ -66,10 +67,10 @@ const InformationSide = () => {
           <div className='socialMedia'><SocialMediaList/></div>
         </div>
       </div>
-      <div className='skills'>
+      <div className='section skills'>
         <SkillsList/>
       </div>
-      <div className='projects'>
+      <div className='section projects'>
         <ProjectsGallery/>
       </div>
     </section>

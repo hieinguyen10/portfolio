@@ -5,27 +5,26 @@
 }
 
 html, body {
-  height: 100%;
-  width: 100%;
-  overflow-x: auto;
+  background-color: #010012;
+  overflow: hidden;
 }
 
 .App {
-  display: flex;
+  display: inline-flex;
   height: 100vh;
-  overflow: hidden;
-  background-color: #010012;
+  width: 100vw;
+  padding-bottom: 5px;
+  font-family: "Varela Round", sans-serif;
+  font-style: normal;
 }
 
 h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 5em;
+  font-size: 3em;
   color: #fdf2ed;
-  
+  font-style: bold;
 }
 
 h2 {
-  font-family: "Inter", sans-serif;
-  font-size: 4em;
+  font-size: 2em;
   color: #fdf2ed;
 }
