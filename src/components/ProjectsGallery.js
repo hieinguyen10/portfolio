@@ -23,15 +23,19 @@ const ProjectsGallery = () => {
         }
         setProects(newProjects);
     }
+
     setIsLengEight(projects.length === 8);
     }, [projects]);
 
     const checkScreenshotPath = (projectName) => {
         try {
-            return screenshots(`./${projectName}.png`);
-        } catch (e) {
-            return screenshots(`./unknown.png`);
-        }
+            const matchingSceenshot = screenshots.keys().find((key) =>
+              key.includes(`/${projectName}.`)
+            );
+            return matchingSceenshot ? screenshots(matchingSceenshot) : screenshots('./unknown.png');
+          } catch (e) {
+            return screenshots('./unknown.png');
+          }
     };
 
     return (

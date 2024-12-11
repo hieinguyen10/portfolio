@@ -43,8 +43,7 @@ const InformationSide = () => {
         <p style={{marginTop:"20px", marginBottom:"50px"}}>I'm passionate about programming and front-end development, and constantly improving my skills to become a versatile full-stack developer while staying curious and committed to growth</p>
       </div>
       <div className='section buttons'>
-        <button className='button download'><HiCloudArrowDown />Download CV</button>
-        <button className='button contactMe'><HiEnvelope />Contact Me</button>
+        <button className='button download'><HiCloudArrowDown />Resume</button>
       </div>
       <h1>About Me</h1>
       <div className='section aboutMe'>
@@ -52,7 +51,7 @@ const InformationSide = () => {
           <h2>Montreal, Quebec, Canada</h2>
           <div className="embedGlobe">
             <iframe
-              src="https://gifer.com/embed/gzZ"
+              src="https://giphy.com/embed/aN9GqoR7OD3nq"
               width="300"
               height="300"
               style={{ pointerEvents: 'none' }}
