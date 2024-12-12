@@ -17,10 +17,6 @@ const applications = [
         name: "2048",
         link: "https://hieinguyen10.github.io/2048-remake/",
     },
-    {
-        name: "Unknown",
-        link: "",
-    },
 ]
 
 export default applications;

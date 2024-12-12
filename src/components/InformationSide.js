@@ -4,7 +4,7 @@ import socialMedia from '../data/socialMedia'
 import skills from '../data/skills'
 import ProjectsGallery from './ProjectsGallery';
 import { HiCloudArrowDown } from "react-icons/hi2";
-import { HiEnvelope } from "react-icons/hi2";
+import resume from "../assets/files/Resume.pdf"
 
 const SocialMediaList = () => {
   return (
@@ -30,6 +30,10 @@ const SkillsList = () => {
   );
 }
 
+const downloadFile = () => {
+  window.location.href = (resume)
+}
+
 const InformationSide = () => {
   return (
     <section className='content-section'>
@@ -43,7 +47,7 @@ const InformationSide = () => {
         <p style={{marginTop:"20px", marginBottom:"50px"}}>I'm passionate about programming and front-end development, and constantly improving my skills to become a versatile full-stack developer while staying curious and committed to growth</p>
       </div>
       <div className='section buttons'>
-        <button className='button download'><HiCloudArrowDown />Resume</button>
+        <button className='button download' onClick={downloadFile}><HiCloudArrowDown />Resume</button>
       </div>
       <h1>About Me</h1>
       <div className='section aboutMe'>

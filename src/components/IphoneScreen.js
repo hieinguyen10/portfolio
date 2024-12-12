@@ -1,6 +1,8 @@
 import React from 'react'
 import "./styles/IphoneScreen.css"
 import applications from '../data/applications';
+import TimePicker from './TimePicker';
+import wifiIcon from '../assets/icons/wifi.png';
 
 const ApplicationsList = () => {
   const icons = require.context('../assets/icons', false, /\.(png|jpe?g|gif)$/);
@@ -17,17 +19,17 @@ const ApplicationsList = () => {
   };
 
   return (
-    <ul className="applications">
+    <ul className="apps-list">
       {applications.map(({ name, link }, index) => (
         <li
           key={index}
-          className="item"
+          className="app"
           onClick={() => {
             if (link) {
               if (link.startsWith("mailto:")) {
                 window.location.href = link;
               } else {
-                window.open(link, "_blank");;
+                window.open(link, "_blank");
               }
             }
           }}
@@ -50,7 +52,7 @@ const IphoneScreen = () => {
     <div className='screen-container'>
         <div className='top-section'>
           <div className='gid-item time-section'>
-            <p>20:00</p>
+            <TimePicker/>
           </div>
           <div className='gid-item dynamic-island'>
             <div className='camera-dot'>
@@ -58,13 +60,19 @@ const IphoneScreen = () => {
             </div>
           </div>
           <div className='gid-item network-section'>
+            <div class="network">
+              <div class="leaf"></div>
+              <div class="leaf"></div>
+              <div class="leaf"></div>
+            </div>
+            <img height="30" src={wifiIcon}/>
+            <div className='battery'></div>
           </div>
         </div>
         <div className='applications-section'>
           <ApplicationsList />
         </div>
         <div className='bottom-section'>
-          <div className='items'></div>
           <div className='items'></div>
           <div className='items'></div>
           <div className='items'></div>

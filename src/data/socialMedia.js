@@ -2,6 +2,25 @@ import React from "react"
 
 const socialMedia = [
   {
+    name: 'Mail',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+        <g fill="#ffffff" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
+          <path d="M64,256c-35.34622,0 -64,-28.65378 -64,-64v-128c0,-35.34622 28.65378,-64 64,-64h128c35.34622,0 64,28.65378 64,64v128c0,35.34622 -28.65378,64 -64,64z" id="shape"></path>
+        </g>
+        <g fill="none" fillRule="nonzero" stroke="#ffffff" strokeWidth="5.12" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
+          <path d="M40.7556,252.63486c-20.65018,0 -37.39046,-16.74028 -37.39046,-37.39046v-174.4888c0,-20.65018 16.74028,-37.39046 37.39046,-37.39046h174.4888c20.65018,0 37.39046,16.74028 37.39046,37.39046v174.4888c0,20.65018 -16.74028,37.39046 -37.39046,37.39046z" id="shape"></path>
+        </g>
+        <g fill="#000000" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: "normal" }}>
+          <g transform="scale(5.12,5.12)">
+            <path d="M5.5,7c-2.48047,0 -4.5,2.01953 -4.5,4.5v0.42578l24,17.07422l24,-17.07422v-0.42578c0,-2.48047 -2.01953,-4.5 -4.5,-4.5zM6.35156,9h37.29297l-18.64453,13zM1,14.02734v24.47266c0,2.48047 2.01953,4.5 4.5,4.5h39c2.48047,0 4.5,-2.01953 4.5,-4.5v-24.47266l-6,4.26953v22.70313h-36v-22.70312z"></path>
+          </g>
+        </g>
+      </svg>
+    ),
+    url: 'mailto:huynhminhhieu.nguyen@gmail.com'
+  },
+  {
     name: 'LinkedIn',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -63,6 +82,7 @@ const socialMedia = [
     ),
     url: 'https://github.com'
   },
+  
 ];
 
 export default socialMedia;

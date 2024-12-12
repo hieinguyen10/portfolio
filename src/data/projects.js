@@ -3,15 +3,15 @@ import React from "react"
 const projects = [
     {
         name: "weCheck",
-        description: "this is description",
+        description: "Weather Forecast | C#",
     },
     {
         name: "lylystudio",
-        description: "this is description",
+        description: "lylystudio.com | HTML/CSS",
     },
     {
         name: "game2048",
-        description: "this is description",
+        description: "Game Redesign 2048 | React",
     }
 ]
 
